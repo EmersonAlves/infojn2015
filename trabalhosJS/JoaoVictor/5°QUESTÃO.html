@@ -1,0 +1,22 @@
+<script>
+<div id="dolar">
+		<script>
+			function cotacao(cotacaoform) {
+			var dolar = document.cotacaoform.dolar.value;
+			var cotacao = document.cotacaoform.cotacao.value;
+			var real = (dolar/cotacao);
+			document.cotacaoform.real.value = real;
+			}
+		</script>
+		<form name="cotacaoform" method="post">
+		<label for=dolar>Dólar: </label>
+		<input type="text" id="dolar" name="dolar" value="" placeholder="Digite o valor em dólares."/>
+		<br />
+		<label for=cotacao>Cotação de hoje: </label>
+		<input type="text" id="cotacao" name="cotacao" value="" placeholder="Qual a cotação de hoje?"/>
+		<input onclick="cotacao(cotacaoform)" type="button" value="Converter" name="calcular"/><br />
+		<label for=troco>Real: </label>
+		<input type="text" id="real" name="real" value=""/>
+		</form>	
+		</div>
+</script>

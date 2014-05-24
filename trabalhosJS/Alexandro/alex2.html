@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>seu troco</title>
+<script>
+        function troco(d) {
+		   var pagamento = document.d.pagamento.value;
+		   var quantidade = document.d.quantidade.value;
+		   var calimc = pagamento - quantidade ;
+		   document.d.result.value=calimc ;
+		   if(pagamento < quantidade ){
+		    alert("valor insuficiente !!! ") ;
+			}else {
+			alert("obrigado volte sempre!!!");
+		}
+	}	
+</script>
+</head>
+<body bgcolor="orange metalic">
+            
+<h1 align="center">supermercado</h1>
+<hr>
+			<form name="d" method="POST">
+                    <label for=pagamento> pagamento : </label>
+                    <input type="test" id="pagamento" name="pagamento" value="" placeholder="digite o valor em dinheiro que você irá pagar!!" >
+                    </br>
+                    <label for=quantidade> quantidade : </label>
+                    <input type="test" id="quantidade" name="quantidade" value="" placeholder="digite o total da conta!!" >
+                    </br>
+                    <label for=resultado> troco </label>
+                    <input onclick="troco(d);" type="button" value="calcular" ></br>
+                    <input type="text" name="result" id="result">
+          
+		    </form>
+</body>
+</html>			

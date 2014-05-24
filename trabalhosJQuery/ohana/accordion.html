@@ -1,0 +1,80 @@
+<html>
+	<head>
+	<title>Accordion</title>
+	<meta charset=UTF-8>
+	<style>
+			body {
+			margin: 10px auto;
+			width:570px;
+			font:75%/120% Arial, Helvetica, sans-serif;
+			}
+			.accordion2 {
+			width: 480px;
+			border-bottom: solid 1px #c4c4c4;
+			}
+			.accordion2 h3 {
+			background: #e9e7e7 url(../images/seta.png) no-repeat rigth -51px;
+			padding: 7px 15px;
+			margin: 0;
+			font: bold 120%/100% Arial, Helvetica, sans-serif;
+			border: solid 1px #c4c4c4;
+			border-bottom: none;
+			cursor: pointer;
+			}
+			.accordion2 h3:hover {
+			background-color: #e3e2e2;
+			}
+			.accordion2 h3.active {
+			background-position: right 5px;
+			}
+			.accordion2 p {
+			background: #f7f7f7;
+			margin: 0;
+			padding: 10px 15px 20px;
+
+			border-left: solid 1px #c4c4c4;
+			border-right: solid 1px #c4c4c4;
+			display: none;
+			}
+	</style>
+	<script type="text/javascript" src="jquery/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="jquery/jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<link type="text/css" href="css/accordion.css" rel="stylesheet"/>
+	<script>
+	$(document).ready(function(){
+		$(".accordion2 h3").eq(2).addClass("Active");
+		$(".accordion2 p").eq(2).show();
+		$(".accordion2 h3").click(function(){
+			$(this).next("p").slideToggle("slow")
+			.siblings("p:visible").slideUp("slow");
+			$(this).toggleClass("Active");
+			$(this).siblings("h3").removeClass("Active");
+		});
+	});
+	</script>
+	</head>
+	<body>
+		<div class="accordion2">
+			<h3>Jquery</h3>
+			<p>Jquery é uma biblioteca JavaScript cross-browser desenvolvida 
+				para simplificar os scripts client side quem interagem com o HTML. </p>
+			<h3>JavaScript</h3>
+			<p>JavaScript é uma linguagem de script baseada em ECMAScript
+				padronizada pela Ecma international nas especificaãotilde;es ECMA-262.</p>
+			<h3>PHP</h3>
+			<p>PHP (Um acrônimo recursivo para "PHP: Hypertext preprocessor", originalmente Personal Home Page)
+				é uma linguagem interpretada livre e utilizada para gerar conteúdo dinâmico na World Wide Web.</p>
+			<h3>CMS</h3>
+			<p>Content Management Systems (CMS) mas igualmente designada como Convernational Monitor System [nota 1]; 
+				um sistema gestor de Websites, e intranet's que integra ferramentas necessárias para criar, gerir (inserir e editar)
+				conteúdos em tempo real sem a necessidade de progamação,cujo objetivo é estruturar e facilitar a criação, administração,
+				distribuição, publicação e disponibilidade da informação.</p>
+			<h3>HTML</h3>
+			<p>HTML (Acrônimo para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto)
+				é uma linguagem de marcação utilizada para produzir páginas na Web.</p>
+		</div>
+	</body>
+</html>	
+				
+		

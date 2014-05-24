@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<script>
+nome = prompt("entre com seu nome");
+anodn = prompt("entre com ano de nascimento");
+mesdn = prompt("entre com mes de nascimento");
+diadn = prompt("entre com dia de nascimento");
+anoat = prompt("entre com ano atual");
+mesat = prompt("entre com mes atual");
+diaat = prompt("entre com dia atual");
+idade = anoat - anodn ;
+if(mesat < mesdn){
+        if((diaat < diadn) && (mesat < mesdn)){
+		idades = idade - 1 ;
+		document.write(" seu nome >"+nome+"</br>sua idade é >"+idades);
+		}
+}else{
+        document.write("seu nome >"+nome+"</br>sua idade é >"+idade);
+}
+</script>
+</head>
+<body>
+</body>
+</html>

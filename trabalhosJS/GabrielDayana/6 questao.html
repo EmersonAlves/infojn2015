@@ -1,0 +1,13 @@
+<script>
+<div id="conv_temp">
+<script>function temp(convtempform){var c=document.convtempform.celsius.value;var f=32+(9.00/5.00)*c;document.convtempform.fahrenheit.value=f;}</script>
+<form name="convtempform" method="post">
+<label for=celsius>Celsius: </label>
+<input type="text" id="celisus" name="celsius" value="" placeholder="temperatura em c."/>
+<br/>
+<input onclick="temp(convtempform)" type="button" value="Converter" name="converter"/><br/>
+<label for=fahrenheit>Fahrenheit </label>
+<input type="text" id="fahrenheit" name="fahrenheit" value=""/>
+</form>
+<script>
+</script>

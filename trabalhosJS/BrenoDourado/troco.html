@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>
+			troco
+		</title>
+	</head>
+	<body>
+		<script>
+			var vp = 0.00, vc = 0.00, troco = 0.00;
+			vc = parseFloat(prompt("Valor da compra"));
+			document.write("<br>Valor da compra: R$", vc);
+			vp = parseFloat(prompt("Valor pago"));
+			document.write("<br>Valor pago: R$", vp);
+			if(vp >= vc){
+				troco = vp  - vc;
+				document.write("<br>Troco : R$ ", troco);
+			}else	alert("Valor pago insuficiente");	
+		</script>
+	</body>
+</html>

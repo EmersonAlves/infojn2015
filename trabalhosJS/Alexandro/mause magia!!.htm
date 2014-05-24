@@ -1,0 +1,27 @@
+
+<!-- saved from url=(0055)file:///C:/Users/Aluno.Dell13-02-PC11/Desktop/alex.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>mause magia!!</title>
+<script> 
+        function mouse_in(){
+		    document.getElementById("texto").style.color="blue";
+	    }
+		function mouse_out(){
+		    document.getElementById("texto").style.color="black";
+        }
+		function alter_txt(){
+		    var x = document.getElementById("fname");
+			x.value=x.value.toUpperCase();
+	    }
+</script> 
+</head>
+<body bgcolor="metalic">
+<h1 align="center" id="texto" onmouseover="mouse_in()" onmouseout="mouse_out()">hello word</h1>
+<div>
+digite seu nome : <input type="text" id="fname" onchange="alter_txt()">
+<p>clique fora da caixa de texto para alterar a letra para maiusculas!!</p>
+</div>
+
+
+
+</body></html>

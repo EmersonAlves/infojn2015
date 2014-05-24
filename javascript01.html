@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+			function welcome(){
+				var boasvindas="Olá, Sou o Professor Emanoel.\nNesta página encontram-se os exemplos e exercícios de JavaScript!";
+				alert(boasvindas);
+			}
+			var num = 10;
+		</script>
+    </head>
+    <body onload="welcome()">
+        <div id="Apresentacao">
+        <script>
+            document.write("<h1>Exemplos e exercícios da apostila de JavaScript/PHP.</h1>");
+        </script>
+        </div>
+        <script>
+            var valor1=7;
+            var valor2=2;
+        </script>
+        <h1>Operadores matemáticos</h1>
+        <div id="Operadores">
+        <h2>Soma</h2>
+            <script>
+                document.write("\nA soma de "+valor1+" + ");
+                document.write(valor2);
+                var resultado = valor1+valor2;
+                document.writeln("\né "+resultado);
+            </script>
+        </div>
+        <div id="OutrosOperadores">
+            <h2>Outros operadores</h2>
+            <script>
+                document.write("A subtração de 5-2 é: ","<b>",5-2,"</b>");
+                document.write("<br>","A multiplicação de 5*2 é: ","<b>",5*2,"</b>");
+                document.write("<br>","A divisão de 10/2 é: ","<b>",10/2,"<b>");
+            </script>
+        </div>
+        <div id="comparacao">
+            <h2>Operadores de comparação</h2>
+            <script>
+                var v11=8;
+                var v12=5;
+                
+                document.write("Maior que: ",v11," > ",v12,"<br>Resultado: ",v11>v12);
+                document.write("<br><br>Menor que: ",v11," < ",v12,"<br>Resultado: ",v11<v12);
+                document.write("<br><br>Maior ou igual: ",v11," >= ",v12,"<br>Resultado: ",v11>=v12);
+                document.write("<br><br>Menor ou igual: ",v11," <= ",v12,"<br>Resultado: ",v11<=v12);
+                document.write("<br><br>Igual: ",v11," === ",v12,"<br>Resultado: ",v11===v12);
+                document.write("<br><br>Diferenca: ",v11," !== ",v12,"<br>Resultado: ",v11!==v12);
+                
+            </script>
+        </div>
+        <div id="imc1">
+            <h2>Cálculo do IMC</h2>
+            <script>
+                var altura = 1.82;
+                var peso = 74;
+                var calimc = peso(altura*altura);
+                document.write(calimc);
+            </script>
+        </div>
+        <div id="media">
+            <h2>Calcular a média de três números</h2>
+            <script>
+                var num1=7;
+                var num2=4;
+                var num3=8;
+                
+                var media=(num1+num2+num3)/3;
+                document.write("A média de ",num1,", ",num2,", ",num3," é ",media);
+            </script>
+        </div>
+        <div id="consumo">
+            <h2>Calculo do consumo de um automóvel</h2>
+            <script>var dist=500;
+            var litros=12;
+            document.write("O consumo médio é: ",litros/dist,"km/l");
+            </script>
+        </div>
+	<!--<div id="Expressao_matematica">
+        <h2>Expressão matemática!</h2>
+        <script>
+            var entrada=prompt("informe uma expressão matemática");
+            var resultado = eval(entrada);
+            document.write("O resultado é: " + resultado);
+        </script>
+		</div>
+	-->
+		<div id="if">
+		<h2>Estrutura de Controle - IF</h2>
+		<script>
+			var opt=1;
+			
+			if(opt==1){
+				document.write("<br><b>","A opção escolhida foi 1","</b></br>");
+			}
+			if (opt==2){
+				document.write("<br><b>","A opção escolhida foi 2","</b></br>");
+			}
+			if (opt==3){
+				document.write("<br><b>","A opção escolhida foi 3","</b></br>");
+			}
+		</script>
+		</div>
+		<div id="if_else">
+		<h2>Estrutura de Controle - IF ELSE</h2>
+		<script>
+			var idade = 18;
+			var maioridade = 18;
+			if (idade >= maioridade){
+				document.write("<br><b>",idade," anos. Você já é maior idade.","</p>");
+			} else {
+				document.write("<br><p>",idade," anos. Você ainda não é maior de idade.","</p>")
+			}
+		</script>
+		<div id="if_else_if" color=blue>
+		<h2>Estrutura de Controle - IF ELSE IF</h2>
+		<script>
+			var altura = 1.82;
+			var peso = 75;
+			var calimc = peso/(altura*altura);
+			
+			if (calimc < 18.5){
+				document.write(calimc + "Magreza");
+			} else if ((calimc > 18.5) && (calimc < 24.9)){
+				document.write(calimc + " Saudável");
+			} else if((calimc > 25)&&(calimc < 29.9)){
+				document.write(calimc+" Sobrepeso");
+			} else if((calimc>30)&&(calimc<34.9)){
+				document.write(calimc+"Obesidade Grau I");
+			} else if((calimc>35)&&(calimc<39.9)){
+				document.write(Obesidade Grau II (severa));
+			} else if(calimc>=40){
+				document.write("Obesidade Grau II (mórbida));
+			}
+		</script>
+		<div id="aluno_premiado">
+		<script>
+			var n1 = 9;
+			var n2 = 6;
+			var media = (n1+n2)/2;
+			if (media<6){
+				 document.write("reprovado");
+			} else if ((media >= 6) && (media < 7)){
+				 document.write("Aluno aprovado");
+			} else if ((media >= 7) && (media < 8)){
+				 document.write("Aluno Prata");
+			} else if ((media >= 8) && (media < 9)){
+				 document.write("Aluno Ouro");
+			} else if ((media >= 9) && (media <=10)){
+				 document("Aluno Diamante");
+			}
+		</script>
+		</div>
+		<div id="switch">
+		<h2>Switch</h2>
+		<script>
+			
+			var opc=2;
+			
+			switch(opc){
+				case 1: document.write("A opção escolhida foi 1");
+				break;
+				case 2: document.write("A opção escolhida foi 2");
+				break;
+				case 3: document.write("A opção escolhida foi 3");
+				break;
+				default: document.write("Opção inexistente.");
+			}
+		</script>
+		<div id="for">
+		<h2>FOR</h2>
+		<script>
+			for(i=1;i<=10;i++){
+				document.write("Número: "+i +"</br>");
+			}
+		</script>
+		
+		<div id="while">
+		<h2>While</h2>
+		<script>
+			num = 1;
+			while(num<=5){
+				document.write("Número: "+num+"</br>");
+				num++;
+			}
+		</script>
+		<div id="do_while">
+		<h2>do while</h2>
+		<script>
+			var num2=10;
+			do{
+				document.write("Número: "+num2+"<br>");
+				num2--;
+			}while(num2>=1)
+		</script>
+		</div>
+		<div id="funcoes">
+		<h2>Funções</h2>
+		<h3>Função: Quadrado de um número</h3>
+		<script>
+			function quadrado(num){
+				var quadrado = num*num;
+				return quadrado;
+			}
+			document.write(quadrado(10));
+		</script>
+		<!--- 
+		*******************************
+		*							  *
+		* FUNÇÃO PARA CÁLCULO DE IMC  *
+		*                             *
+		*******************************
+		--->
+		<div id="imc2">
+		<h3>Função para cálculo de IMC</h3>
+		<script>
+			function imc(imcform) {
+			var altura = document.imcform.altura.value;
+			var peso = document.imcform.peso.value;
+			var calimc = peso / (altura*altura);
+			document.imcform.resultado.value = calimc;
+			//alert("Altura: " +altura+"\nPeso: " +peso);
+			/*if((altura == null)||(peso == null)){
+				alert("É necessário indicar o seu peso e sua altura");
+				document.imcform.altura.focus();
+			} else {
+				var calimc = peso/(altura*altura);
+				document.imcform.resultado.value = calimc;
+			}*/
+			if (calimc < 18.5){
+				alert("Atenção!!\nMagreza.");
+			} else if ((calimc > 18.5) && (calimc < 24.9)){
+				alert("Muito bem!\nSaudável.");
+			} else if((calimc > 25)&&(calimc < 29.9)){
+				alert("Atenção!\nSobrepeso.");
+			} else if((calimc>30)&&(calimc<34.9)){
+				alert("Obesidade Grau I");
+			} else if((calimc>35)&&(calimc<39.9)){
+				alert("CUIDADO!!!\nA obesidade traz complicações à saúde. \nObesidade Grau II (severa)");
+			} else if(calimc>=40){
+				alert("CUIDADO com a sua saúde!!!\nProcure um médico! \nObesidade Grau II (mórbida)");
+			}
+			}
+		</script>
+		<form name="imcform" method="post">
+		<label for=altura>Altura: </label>
+		<input type="text" id="altura" name="altura" value="" placeholder="Digite a sua altura."/>
+		<br />
+		<label for=peso>Peso: </label>
+		<input type="text" id="peso" name="peso" value="" placeholder="Digite o seu peso."/>
+		<input onclick="imc(imcform)" type="button" value="Calcular" name="result"><br />
+		<label for=resultado>IMC: </label>
+		<input type="text" id="resultado" name="resultado" value=""/>
+		</form>	
+		</div>
+		<!--- 
+		********************************
+		*							   *
+		* FUNÇÃO PARA CÁLCULO DE TROCO *
+		*                              *
+		********************************
+		--->
+		<div id="troco">
+		<h3>Função para cálculo de troco.</h3>
+		<script>
+			function troco(trocoform) {
+			var vl_produto = document.trocoform.produto.value;
+			var vl_pago = document.trocoform.pago.value;
+			var vl_troco = (vl_pago - vl_produto);
+			document.trocoform.troco.value = vl_troco;
+			if(vl_pago < vl_produto){
+				alert("Valor pago insuficiente para comprar o produto");
+			} else {
+				alert("O valor do produto é "+vl_produto);
+				alert("O valor pago é "+vl_pago);
+				alert("O troco é "+vl_troco);
+			}
+		</script>
+		<form name="trocoform" method="post">
+		<label for=produto>Valor do produto: </label>
+		<input type="text" id="produto" name="produto" value="" placeholder="Digite o valor do produto."/>
+		<br />
+		<label for=pago>Valor pago: </label>
+		<input type="text" id="pago" name="pago" value="" placeholder="Digite o valor pago."/>
+		<input onclick="troco(trocoform)" type="button" value="Calcular o troco" name="calcular"/><br />
+		<label for=troco>Troco: </label>
+		<input type="text" id="troco" name="troco" value=""/>
+		</form>	
+		</div>
+		<!--- 
+		********************************
+		*							   *
+		* FUNÇÃO PARA COTAÇÃO DO DÓLAR *
+		*                              *
+		********************************
+		--->
+		<div id="dolar">
+		<h3>Função para cotação do dólar.</h3>
+		<script>
+			function cotacao(cotacaoform) {
+			var dolar = document.cotacaoform.dolar.value;
+			var cotacao = document.cotacaoform.cotacao.value;
+			var real = (dolar/cotacao);
+			document.cotacaoform.real.value = real;
+			}
+		</script>
+		<form name="cotacaoform" method="post">
+		<label for=dolar>Dólar: </label>
+		<input type="text" id="dolar" name="dolar" value="" placeholder="Digite o valor em dólares."/>
+		<br />
+		<label for=cotacao>Cotação de hoje: </label>
+		<input type="text" id="cotacao" name="cotacao" value="" placeholder="Qual a cotação de hoje?"/>
+		<input onclick="cotacao(cotacaoform)" type="button" value="Converter" name="calcular"/><br />
+		<label for=troco>Real: </label>
+		<input type="text" id="real" name="real" value=""/>
+		</form>	
+		</div>
+		<!--- 
+		********************************
+		*							   *
+		* FUNÇÃO PARA CONVESÃO DE TEMP *
+		*                              *
+		********************************
+		--->
+		<div id="conv_temp">
+		<h3>Função para conversão de temperatura</h3>
+		<script>
+			function temp(convtempform){
+			var c = document.convtempform.celsius.value;
+			var f = 32 + (9.00/5.00)*c;
+			document.convtempform.fahrenheit.value = f;
+			}
+		</script>
+		<form name="convtempform" method="post">
+		<label for=celsius>Celsius: </label>
+		<input type="text" id="celisus" name="celsius" value="" placeholder="Digite a temperatura em celsius."/>
+		<br />
+		<input onclick="temp(convtempform)" type="button" value="Converter" name="converter"/><br />
+		<label for=fahrenheit>Fahrenheit </label>
+		<input type="text" id="fahrenheit" name="fahrenheit" value=""/>
+		</form>	
+		
+    </body>
+</html>

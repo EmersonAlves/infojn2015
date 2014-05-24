@@ -1,0 +1,15 @@
+<script>
+<div id="troco">
+<script>function troco(trocoform){var vl_produto=document.trocoform.produto.value;var vl_pago=document.trocoform.pago.value;var vl_troco=(vl_pago-vl_produto);document.trocoform.troco.value=vl_troco;if(vl_pago<vl_produto){alert("Valor pago insuficiente para comprar o produto");}else{alert("O valor do produto é "+vl_produto);alert("O valor pago é "+vl_pago);alert("O troco é "+vl_troco);}</script>
+<form name="trocoform" method="post">
+<label for=produto>Valor do produto: </label>
+<input type="text" id="produto" name="produto" value="" placeholder="Digite o valor do produto."/>
+<br/>
+<label for=pago>Valor pago: </label>
+<input type="text" id="pago" name="pago" value="" placeholder="valor pago."/>
+<input onclick="troco(trocoform)" " value="Calcular o troco" name="calcular"/><br/>
+<label for=troco>Troco: </label>
+<input type="text" id="troco" name="troco" value=""/>
+</form>
+</div>
+</script>

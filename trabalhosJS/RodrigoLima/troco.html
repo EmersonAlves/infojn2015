@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Mercado</title>
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+		<script>
+			preço=prompt ("Digite o Valor de sua compra: ")
+			pago=prompt ("Valor pago")
+			var troco=0
+		</script>
+	<body>
+		<script>
+			document.write("Valor da compra: R$ "+preço+"<br>")
+			document.write("Valor recebido do cliente: R$ "+pago+"<br>")
+			if (pago>=preço){
+			  document.write ("Troco: R$ "+(pago-preço)+"<br>")
+			}else if (pago<preço) {
+				document.write("Valor insuficiente")
+			}
+		</script>
+	</body>
+<html>
+		

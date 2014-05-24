@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>tabela</title>
+	<link type="text/css" href="../css/tabela.css" rel='stylesheet">
+	<script type="text/javascript" src="../jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(}{
+			$('table#horario tbody tr:odd').addClass('impar);
+			
+			//Continuação para o exemplo 2 
+			$('table#horario tbody tr:even').addClass('par');
+			4('table#horerio tbody tr').hover(
+			function () {
+				$(this).addClass('destacar');
+				}
+			function () {
+				$(this).removeClass('destacar');
+				)); //Fim exemplo 2
+			});
+		
+		</script>
+    <body>
+	<table id="horario">
+	<h1>Exemplo tabela 1</h1>
+	<caption>
+	Viacao Frescos do JN - Horarios
+	</caption>
+	<thead>
+		<tr id="horizontal">
+			<th>Destino: </th>
+			<th scope="col">Saida: </th>
+			<th scope="col">Chegada: </th>
+			<th scope="col">Classe: </th>
+			<th scope="col">Tarifa: </th>
+			<th scope="col">Frequencia: </th>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan=6=>Valida para o periodo de 06/05/2014.</td>
+			</tr>
+		</tfoot>
+		<tbody>
+		<tr>
+			<td>Fortaleza</td><td>06h00</td><td>11h00</td><td>Leito</td><td>R$80,00</td><td>Diaria</td>
+		</tr>
+			<td>Quixada</td><td>07h30</td><td>10h00</td><td>Executivo</td><td>R$30,00</td><td>Diaria</td>
+		</tr>
+			<td>Quixeramobim</td><td>07h30</td><td>11h40</td><td>Convencional</td><td>R$35,00</td><td>Diaria</td>
+		</tr>
+			<td>Russas</td><td>05h00</td><td>08h00</td><td>Convencional</td><td>R$30,00</td><td>Diaria</td>
+		</tr>
+			<td>Itapipoca</td><td>09h30</td><td>13h00</td><td>Leito</td><td>R$50,00</td><td>Diaria</td>
+		</tr>
+		
+		</tbody>
+		</body>
+		</html>
+		
+		</tbody>
+		
+	</body>

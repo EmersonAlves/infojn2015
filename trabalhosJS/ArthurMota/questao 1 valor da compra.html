@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Compra</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	var dolar;
+	var cota;
+	var troco
+	var falta
+
+	valor_compra= prompt (" valor da compra");
+	document.write ("valor do produto: " +valor_compra, "<br>" );
+	Valor_pago= prompt("valor para pagar");
+	document.write (" valor entregue: " +Valor_pago, "<br>" );
+	
+	valor_compra = parseInt(valor_compra);
+	Valor_pago = parseInt(Valor_pago);
+
+	
+	if (Valor_pago<valor_compra){
+	alert ("VALOR INSUFICIENTE");
+	document.write("valor insuficiente");
+	falta=valor_compra-Valor_pago
+	document.write("<br>faltam "+falta+" reais")
+	} else if (Valor_pago>=valor_compra){
+	troco= Valor_pago-valor_compra
+	document.write("o troco é: " +troco);
+	}
+	</script>
+</body>
+</html>

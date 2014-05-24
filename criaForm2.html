@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Criando formulários com JS</title>		
+	</head>
+	<body>
+		<div id="array2-1">
+		<h3>Exemplo 2 - Criando campos de formulários (usando o formulários).</h3>
+		<script>
+			function criaform(form2){
+				qtd = document.form2.quantidade.value;
+				document.write(qtd);
+			//	for(i=0;i<qtd;i++){
+				//document.write("<br>",[i],":<input type=text name=campo"+[i],">");
+				}
+			}
+		</script>
+		<form name=form2 method=post>
+		<input type="text" id="quantidade" name="quantidade" value="" placeholder="Quantos campos?"/>
+		<input type=button value="Criar" onClick="criaform(form2)" name="cria" onfocus>
+		</form>
+		</div>
+	</body>
